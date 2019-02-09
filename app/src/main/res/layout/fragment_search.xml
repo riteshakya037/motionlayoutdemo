@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<np.com.riteshakya.motionlayoutdemo.SingleViewTouchableMotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/searchMotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/search_scene"
+        app:touchId="@+id/draggableView">
+
+    <View
+            android:id="@+id/profileSearchHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FCFCFC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+            android:id="@+id/draggableView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintTop_toTopOf="@id/profileSearchHolder"/>
+
+    <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/vertical_margin_medium"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            app:layout_constraintTop_toTopOf="@id/profileSearchHolder">
+
+    </SearchView>
+
+    <TextView
+            android:id="@+id/helloText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Hello from Search Fragment"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="@id/profileSearchHolder"
+            app:layout_constraintBottom_toBottomOf="@id/profileSearchHolder"
+    />
+
+
+</np.com.riteshakya.motionlayoutdemo.SingleViewTouchableMotionLayout>

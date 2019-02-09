@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             app:duration="@android:integer/config_longAnimTime">
+
+    <Transition
+            app:constraintSetEnd="@id/expanded"
+            app:constraintSetStart="@id/collapsed"
+            app:duration="@android:integer/config_longAnimTime"
+            app:interpolator="linear">
+
+        <OnSwipe
+                app:dragDirection="dragDown"
+                app:maxVelocity="20"
+                app:touchAnchorId="@+id/navBar"
+                app:touchAnchorSide="bottom"/>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/expanded">
+
+        <Constraint
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintBottom_toTopOf="@id/navBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+                android:id="@+id/navBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/collapsed">
+
+        <Constraint
+                android:id="@+id/contentView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/navBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+    </ConstraintSet>
+
+</MotionScene>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<np.com.riteshakya.motionlayoutdemo.SingleViewTouchableMotionLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/settingsMotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/settings_scene"
+        app:touchId="@+id/navBar"
+        tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="76dp"
+            android:background="?colorPrimary"
+            app:layout_constraintBottom_toTopOf="@id/navBar"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello from Settings Fragment"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="?colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</np.com.riteshakya.motionlayoutdemo.SingleViewTouchableMotionLayout>
