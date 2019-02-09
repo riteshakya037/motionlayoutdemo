@@ -40,8 +40,8 @@
         <Constraint
                 android:id="@+id/searchFragment"
                 android:layout_width="match_parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_height="-1dp"/>
+                android:translationY="@dimen/search_hidden_height"
+                android:layout_height="match_parent"/>
     </ConstraintSet>
 
 
@@ -58,7 +58,7 @@
         <Constraint
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="76dp"
+                android:layout_height="@dimen/toolbar_height"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>

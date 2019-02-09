@@ -5,4 +5,6 @@
     <dimen name="vertical_margin_small">8dp</dimen>
     <dimen name="horizontal_margin_large">32dp</dimen>
     <dimen name="horizontal_margin_medium">24dp</dimen>
+    <dimen name="search_hidden_height">96dp</dimen>
+    <dimen name="toolbar_height">76dp</dimen>
 </resources>
