@@ -6,5 +6,9 @@ Full blog can be found at https://medium.com/@riteshakya037/motionlayout-early-b
 
 ## Animations
 
-![Animation in this GUIDE](animation/animation_in_guide.gif "Animation in Guide")
 ![Original Animation](animation/original_animation.gif "Original Animation")
+
+This is the stripped down version of this animation which should be more than enough to get someone started. 
+
+
+![Animation in this GUIDE](animation/animation_in_guide.gif "Animation in Guide")
