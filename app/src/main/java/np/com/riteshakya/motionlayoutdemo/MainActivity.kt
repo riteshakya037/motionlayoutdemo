@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         searchFragment.revertMotion()
     }
 
-    private fun transitionFromDetailPage() {
+    private fun transitionFromSettingsPage() {
         settingsFragment.revertMotion()
     }
 
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                 transitionFromSearchPage()
             }
             SETTING -> {
-                transitionFromDetailPage()
+                transitionFromSettingsPage()
             }
         }
     }

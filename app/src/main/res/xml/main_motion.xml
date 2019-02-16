@@ -4,7 +4,7 @@
              app:duration="@android:integer/config_longAnimTime">
 
     <Transition
-            android:id="@+id/showDetails"
+            android:id="@+id/showSettings"
             app:constraintSetEnd="@id/endSetting"
             app:constraintSetStart="@id/startSetting"
             app:duration="@android:integer/config_longAnimTime"
